@@ -1,0 +1,14 @@
+.root {
+  display: flex;
+  justify-content: space-between;
+}
+
+.details {
+  transform: scale(1.5);
+  margin: 15px;
+}
+
+.data {
+  font-size: 20px;
+  color: #d8d6d6;
+}
