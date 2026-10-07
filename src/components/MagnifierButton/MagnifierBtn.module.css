@@ -1,0 +1,20 @@
+.root {
+  position: absolute;
+  top: 15px;
+  right: 60px;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #1a1a1a;
+  height: 35px;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    background-color: #2a2a2a;
+  }
+
+  &:active {
+    transform: scale(1.1);
+  }
+}

@@ -1,0 +1,9 @@
+.root {
+  padding: 10px 30px;
+  border: none;
+  border-radius: 10px;
+  display: block;
+  background-color:#1a1a1a;
+  margin-bottom: 20px;
+  color: white;
+}
