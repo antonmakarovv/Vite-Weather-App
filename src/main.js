@@ -16,7 +16,7 @@ const tempMin = document.querySelector('#temp-min');
 const inputCity = document.querySelector('#input-city-name'); 
 const getWeatherBtn = document.querySelector('#get-weather-btn');
 
-const apiKey = '979be1a22b1f2dd833f21079b3a21c11';
+const apiKey = '';
 
 const weatherIcons = {
   sunny: '☀️', 

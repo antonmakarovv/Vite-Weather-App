@@ -1,72 +1,101 @@
-# Weather App
+# Vite Weather Cards
 
 ![Weather App Screenshot](public/screenshot.png)
 
-A simple and intuitive weather application that provides current weather information for any city worldwide.
+A modern, fast weather application built with Vite that provides current weather information for any city worldwide with a beautiful card-based UI.
 
 ## Features
 
 - **City Search**: Enter any city name to get current weather data
 - **Current Temperature**: Displays temperature in Celsius
 - **Weather Conditions**: Shows weather status with appropriate emoji icons (sunny ☀️, cloudy ☁️, rainy 🌧️, snowy ❄️, thunderstorm ⚡)
-- **Detailed Information**:
+- **Detailed Statistics**:
   - 💧 Humidity percentage
   - 💨 Wind speed
   - ⬆️ Maximum temperature
   - ⬇️ Minimum temperature
 - **Persistent Storage**: Remembers your last searched city using localStorage
 - **Keyboard Support**: Press Enter to search for weather
+- **Component-Based Architecture**: Modular structure with reusable components
 
 ## Technologies Used
 
-- **HTML5** - Structure and markup
-- **CSS3** - Styling and layout
+- **Vite** - Next generation frontend tooling
 - **JavaScript (ES6+)** - Application logic and API integration
+- **CSS Modules** - Scoped styling for components
 - **OpenWeatherMap API** - Weather data provider
 
 ## Getting Started
 
 ### Prerequisites
 
-- A modern web browser
+- Node.js (version 14 or higher)
+- npm or yarn
 - An API key from [OpenWeatherMap](https://openweathermap.org/api)
 
 ### Installation
 
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/antonmakarovv/Vite-Weather-Cards.git
    ```
 
 2. Navigate to the project directory:
    ```bash
-   cd Weather-App
+   cd Vite-Weather-Cards
    ```
 
-3. Open `Weather-App/script.js` and add your OpenWeatherMap API key:
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+4. Add your OpenWeatherMap API key in `src/main.js`:
    ```javascript
    const apiKey = 'your-api-key-here';
    ```
 
-4. Open `index.html` in your browser
+5. Start the development server:
+   ```bash
+   npm run dev
+   ```
+
+6. Open your browser and navigate to `http://localhost:5173`
+
+## Available Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build locally
 
 ## Usage
 
 1. Enter a city name in the input field
 2. Click the search button (magnifier icon) or press Enter
-3. View the current weather information for that city
+3. View the current weather information displayed in elegant cards
 
 ## Project Structure
 
 ```
-Weather-App/
-├── index.html           # Main HTML file
-├── README.md            # Project documentation
-└── Weather-App/
-    ├── script.js        # Application logic
-    ├── styles.css       # Styling
-    ├── icons/           # UI icons
-    └── screenshots/     # Application screenshots
+Vite-Weather-Cards/
+├── public/
+│   ├── magnifier.png          # Search icon
+│   └── screenshot.png         # Application screenshot
+├── src/
+│   ├── components/
+│   │   ├── CityName/          # City name display component
+│   │   ├── Description/       # Weather description component
+│   │   ├── GetWeatherBtn/     # Search button component
+│   │   ├── InputCityName/     # City input component
+│   │   ├── ShowStatPage/      # Statistics display component
+│   │   ├── ShowWeatherPage/   # Main weather display component
+│   │   ├── TemperatureStat/   # Temperature display component
+│   │   ├── WeatherCard/       # Main card container component
+│   │   └── WeatherIcon/       # Weather icon component
+│   ├── main.js                # Application entry point
+│   └── style.css              # Global styles
+├── index.html                 # HTML template
+└── package.json               # Project configuration
 ```
 
 ## API Reference
@@ -87,3 +116,7 @@ Feel free to submit issues and enhancement requests!
 ## License
 
 This project is open source and available under the [MIT License](LICENSE).
+
+## Author
+
+Anton Makarov
