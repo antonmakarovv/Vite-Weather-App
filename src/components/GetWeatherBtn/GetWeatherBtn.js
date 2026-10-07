@@ -1,4 +1,4 @@
-import styles from './MagnifierBtn.module.css';
+import styles from './GetWeatherBtn.module.css';
 
 
 export default () => {
