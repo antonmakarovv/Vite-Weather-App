@@ -1,4 +1,4 @@
-# Vite Weather Cards
+# Vite Weather App
 
 ![Weather App Screenshot](public/screenshot.png)
 
